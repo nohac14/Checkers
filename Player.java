@@ -5,12 +5,23 @@ public class Player {
     /**
      * Indicates whether the player is on the red side of the game.
      */
-    public boolean isRedSide;
+    private boolean isRedSide;
 
     /**
      * Indicates whether the player is a human player (as opposed to CPU).
      */
-    public boolean humanPlayer;
+    private boolean humanPlayer;
+
+    /**
+     * Initializes a new piece with the specified properties.
+     *
+     * @param isRedSide  Indicates whether the player is on the red side.
+     * @param isHumanPlayer   Indicates whether the player is human.
+     */
+    public Player(boolean isRedSide, boolean isHumanPlayer) {
+        this.isRedSide = isRedSide;
+        this.humanPlayer = isHumanPlayer;
+    }
 
     /**
      * Checks if the player is on the red side of the game.

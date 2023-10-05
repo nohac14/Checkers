@@ -8,6 +8,7 @@ public class Board {
      * Initializes a new game board and resets it to the starting state.
      */
     public Board() {
+        this.boxes = new Space[8][8];
         this.resetBoard();
     }
 
